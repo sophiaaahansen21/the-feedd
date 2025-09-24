@@ -10,11 +10,20 @@ body {
 }
 
 h1 {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  border: 4px solid rgb(214, 79, 142);
+  border-radius: 25px;
+  padding: 20px 40px;
+  margin: 40px auto;
+  width: fit-content;
+  background-color: rgb(255, 230, 245);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
   color: rgb(214, 79, 142);
   font-size: 70px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 0; 
+  font-family: "hello_wicked", cursive;
 }
 
 h2 {
@@ -28,44 +37,72 @@ h2 {
 }
 
 .reflections {
+  max-width: 600px;
+  margin: 50px auto;  
+  padding: 20px;
   color: rgb(151, 86, 200);
-  font-family: "hello_wicked", cursive;
   font-size: 20px;
-  font-weight: normal;
   text-align: center;
-  max-width: 500px;
-  margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom:10px;
+  line-height: 1.3;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center; 
+  gap: 60px;    
+  flex-wrap: wrap;                  
+  margin: 50px auto;      
 }
 
 .photo {
-  display: inline-block; 
-  padding-top: 30px;
-  margin: 0 15px;        
+  width: 300px;   
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(1.05);
 }
 
 .touchinggrass {
   color: rgb(151, 86, 200);
   font-family: "hello_wicked", cursive;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: normal;
   text-align: center;
   max-width: 500px;
-  margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom:10px;
+  margin: 40px auto;   
+  padding: 20px 0;   
 }
 
-photo {
-  display: inline-block; 
-  padding-top: 30px;
-  margin: 0 15px;        
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;          
+  flex-wrap: wrap;     
+  margin: 50px auto;   
+}
+
+.photo {
+  width: 300px;       
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+}
+
+.bottom-gif img {
+  display: block;
+  margin: 60px auto;   
+  transition: transform 0.3s ease;
 }
 
 .back 
   :hover {
-  color: rgb(228, 230, 126); 
+  color: rgb(255, 43, 205); 
   }
 
 a[href="reflections.html"] {
@@ -73,7 +110,7 @@ a[href="reflections.html"] {
   margin-bottom: 20px;
 }
 a[href="reflections.html"]:hover {
-  color: rgb(228, 230, 126); 
+  color: rgb(255, 43, 205); 
 }
 
 a[href="touchinggrass.html"] {
@@ -82,7 +119,7 @@ a[href="touchinggrass.html"] {
   margin-bottom: 20px;
 }
 a[href="touchinggrass.html"]:hover {
-  color: rgb(228, 230, 126); 
+  color: rgb(255, 43, 205); 
 }
 
 .intro a {
